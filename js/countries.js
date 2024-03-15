@@ -18,13 +18,31 @@ const displayCountries = countries =>{
 }
 
 // step-3:
-const getCountryHTML = country => {
-    return `
-        <div class="country">
-            <h2>${country.name.common}</h2>
-            <img src="${country.flags.png}">
-        </div>
-    `
-}
+
+//option 1
+// const getCountryHTML = country => {
+//      const {name, flags} = country;
+     //here country is the object and name and flags are two variable that contains in country object. 
+    // if we declare variable and object like this, then we don't have to use {country.name.common} instead of this we can only use {name.common};
+
+//     return `
+//         <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src="${flags.png}">
+//         </div>
+//     `
+// }
+
+
+
+// original
+// const getCountryHTML = country => {
+//     return `
+//         <div class="country">
+//             <h2>${country.name.common}</h2>
+//             <img src="${country.flags.png}">
+//         </div>
+//     `
+// }
 
 loadCountries();
