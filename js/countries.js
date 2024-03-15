@@ -33,7 +33,18 @@ const displayCountries = countries =>{
 //     `
 // }
 
-
+// option-2
+const getCountryHTML = ({name, flags, area})=>{
+    return `
+        <div class="country">
+            <h2>
+                ${name.common}
+            </h2>
+            <p>Area : ${area}</p>
+            <img src="${flags.png}">
+        </div>
+    `
+}
 
 // original
 // const getCountryHTML = country => {
